@@ -5,9 +5,9 @@
 type: map
 id: full-page
 config:
-  mapStyle: "https://tiles.openfreemap.org/styles/positron"
-  center: [-73.9654, 40.7829]
-  zoom: 12.5
+  mapStyle: "style.json"
+  center: [-73.97228, 40.74921]
+  zoom: 13.81
 
 # MapLibre's own buttons. `navigation` adds zoom in/out and a compass (click
 # it to turn the map back to north). Others: scale, fullscreen, geolocate.
@@ -29,7 +29,7 @@ layers:
   - id: buildings
     type: fill
     label: Buildings
-    visible: false
+    visible: true
     legend: false
     source:
       type: vector
@@ -37,7 +37,7 @@ layers:
     source-layer: building
     minzoom: 13
     paint:
-      fill-color: "#b2182b"
+      fill-color: "#ff00ff"
       fill-opacity: 0.35
 
   - id: bike-lanes
@@ -47,9 +47,9 @@ layers:
       type: geojson
       url: "data/manhattan-bike-lanes.geojson"
     paint:
-      line-color: "#2166ac"
+      line-color: "#02fa40"
       line-width: 2
-    legend: { label: Bike lanes, color: "#2166ac", shape: line }
+    legend: { label: Bike lanes, color: "#02fa40", shape: line }
     interactive:
       hover:
         cursor: pointer

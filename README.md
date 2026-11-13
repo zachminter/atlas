@@ -55,7 +55,7 @@ open its `http://` address instead.
 
 ### 1. Name and text
 
-The site's name, **Project Website**, is in the header of each page. Change it
+The site's name, **atlas**, is in the header of each page. Change it
 in all four `.html` files, along with each page's `<title>` and
 `<meta name="description">` near the top. The text of each page is ordinary
 HTML: edit it in any text editor.
