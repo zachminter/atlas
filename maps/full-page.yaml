@@ -29,7 +29,7 @@ layers:
   - id: buildings
     type: fill
     label: Buildings
-    visible: true
+    visible: false
     legend: false
     source:
       type: vector
@@ -37,7 +37,7 @@ layers:
     source-layer: building
     minzoom: 13
     paint:
-      fill-color: "#ff00ff"
+      fill-color: "#b2182b"
       fill-opacity: 0.35
 
   - id: bike-lanes
@@ -47,9 +47,9 @@ layers:
       type: geojson
       url: "data/manhattan-bike-lanes.geojson"
     paint:
-      line-color: "#02fa40"
+      line-color: "#2166ac"
       line-width: 2
-    legend: { label: Bike lanes, color: "#02fa40", shape: line }
+    legend: { label: Bike lanes, color: "#2166ac", shape: line }
     interactive:
       hover:
         cursor: pointer

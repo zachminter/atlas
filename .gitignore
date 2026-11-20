@@ -12,3 +12,6 @@ npm-debug.log*
 # environment variables (never commit secrets)
 .env
 .env.*
+
+# IPUMS NHGIS API key
+data/apitxt.txt

@@ -368,3 +368,95 @@ html ml-scrollytelling {
 .home b {
   font-weight: 600;
 }
+
+/* ------------------------------------------- Essex County decade panel -- */
+/* The panel on essex-race.html: decade buttons, legend and notes. */
+.decade-panel {
+  width: 17rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.25rem;
+  background: rgb(255 255 255 / 0.94);
+  color: #44403c;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.15);
+}
+.decade-panel h1 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: #111;
+}
+.decade-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.25rem;
+}
+.decade-buttons button {
+  padding: 0.3rem 0;
+  border: 1px solid #c7c7c7;
+  border-radius: 0.2rem;
+  background: #fff;
+  color: #333;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.decade-buttons button:hover { border-color: #045a8d; }
+.decade-buttons button[aria-pressed="true"] {
+  background: #045a8d;
+  border-color: #045a8d;
+  color: #fff;
+  font-weight: 600;
+}
+.decade-stat { margin: 0.6rem 0 0.2rem; }
+.decade-stat #decade-pct {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111;
+  font-variant-numeric: tabular-nums;
+}
+.decade-note { margin: 0 0 0.5rem; min-height: 1.2em; }
+.decade-legend {
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.15rem 0.5rem;
+}
+.decade-legend span {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.35rem;
+  vertical-align: -0.15rem;
+  border: 1px solid rgb(0 0 0 / 0.15);
+}
+.decade-source { margin: 0; font-size: 0.75rem; color: #78716c; }
+@media (max-width: 639px) {
+  .decade-panel { width: 13rem; font-size: 0.75rem; }
+  .decade-source, .decade-note { display: none; }
+}
+
+/* Highways page (essex-highways.html): list of sections and a dashed legend swatch. */
+.decade-buttons:has(> :nth-child(6):last-child) { grid-template-columns: repeat(3, 1fr); }
+.hwy-list { padding-left: 1rem; margin: 0 0 0.5rem; }
+.hwy-list li { margin-bottom: 0.15rem; }
+.decade-legend span.dash {
+  border: 0;
+  height: 0;
+  border-top: 3px dashed #555;
+  vertical-align: 0.25rem;
+}
+.decade-buttons:has(> :nth-child(8):last-child) { grid-template-columns: repeat(4, 1fr); }
+.view-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem; margin-bottom: 0.4rem; }
+.view-buttons button {
+  padding: 0.25rem 0;
+  border: 1px solid #c7c7c7;
+  border-radius: 0.2rem;
+  background: #f5f5f4;
+  color: #333;
+  font: inherit;
+  cursor: pointer;
+}
+.view-buttons button:hover { border-color: #045a8d; }
